@@ -1,0 +1,14 @@
+
+# Zona menu items definition
+entity.zona.collection:
+  title: 'Zona list'
+  route_name: entity.zona.collection
+  description: 'List Zona entities'
+  parent: system.admin_structure
+  weight: 100
+
+zona.admin.structure.settings:
+  title: 'Zona settings'
+  description: 'Configure Zona entities'
+  route_name: zona.settings
+  parent: system.admin_structure

@@ -1,0 +1,19 @@
+add zona entities:
+  title: 'Create new Zona entities'
+
+administer zona entities:
+  title: 'Administer Zona entities'
+  description: 'Allow to access the administration form to configure Zona entities.'
+  restrict access: true
+
+delete zona entities:
+  title: 'Delete Zona entities'
+
+edit zona entities:
+  title: 'Edit Zona entities'
+
+view published zona entities:
+  title: 'View published Zona entities'
+
+view unpublished zona entities:
+  title: 'View unpublished Zona entities'

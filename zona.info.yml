@@ -1,0 +1,7 @@
+name: 'Zona'
+type: module
+description: 'Pembagian zona pendaftaran'
+core: 8.x
+package: 'PPDB'
+dependencies:
+  - wilayah_indonesia_regency

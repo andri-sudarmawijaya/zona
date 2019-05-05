@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains zona.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zona_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zona module.
+    case 'help.page.zona':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Pembagian zona pendaftaran') . '</p>';
+      return $output;
+
+    default:
+  }
+}

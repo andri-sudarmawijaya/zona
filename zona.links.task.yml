@@ -1,0 +1,22 @@
+# Zona routing definition
+zona.settings_tab:
+  route_name: zona.settings
+  title: 'Settings'
+  base_route: zona.settings
+
+entity.zona.canonical:
+  route_name: entity.zona.canonical
+  base_route: entity.zona.canonical
+  title: 'View'
+
+entity.zona.edit_form:
+  route_name: entity.zona.edit_form
+  base_route: entity.zona.canonical
+  title: 'Edit'
+
+entity.zona.delete_form:
+  route_name:  entity.zona.delete_form
+  base_route:  entity.zona.canonical
+  title: Delete
+  weight: 10
+

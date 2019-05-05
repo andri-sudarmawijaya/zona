@@ -1,0 +1,6 @@
+entity.zona.add_form:
+  route_name: entity.zona.add_form
+  title: 'Add Zona'
+  appears_on:
+    - entity.zona.collection
+    - entity.zona.canonical
