@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup mula
+ */
+use Drupal\zona\Entity\Zona;
+
+function zona_install() {
+  // Insert some example data into our schema.
+
+  $entries = [
+	['id' => '3601', 'name' => 'Kabupaten Pandegelang'],
+	['id' => '3602', 'name' => 'Kabupaten Lebak'],
+	['id' => '3603', 'name' => 'Kabupaten Tangerang'],
+	['id' => '3604', 'name' => 'Kabupaten Serang'],
+	['id' => '3671', 'name' => 'Kota Tangerang'],
+	['id' => '3672', 'name' => 'Kota Cilegon'],
+	['id' => '3673', 'name' => 'Kota Serang'],
+	['id' => '3674', 'name' => 'Kota Tangerang Selatan'],
+  ];
+  
+  foreach ($entries as $entry) {
+	$entry['user_id'] = '1'; 
+    $zona = Zona::create($entry);
+	
+	$zona->save();
+  }
+}
